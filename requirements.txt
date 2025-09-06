@@ -3,3 +3,5 @@ openai
 google-generativeai
 langchain
 langchain-openai
+langchain-community
+langchain-core
