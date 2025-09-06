@@ -24,7 +24,7 @@ os.environ["OPENAI_API_KEY"] = st.secrets["openai"]["api_key"]
 with st.sidebar:
     st.header("⚙️ 설정")
     default_model = st.secrets["openai"].get("model", "gpt-4o-mini")
-    model_name = st.selectbox("OpenAI 모델", [default_model, "gpt-4o-mini", "gpt-4.1"], index=0)
+    model_name = st.selectbox("OpenAI 모델", [default_model, "gpt-4o-mini", "gpt-4.1", "gpt-5-mini-2025-08-07"], index=0)
     temperature = st.slider("창의성 (temperature)", 0.0, 1.2, 0.7, 0.1)
     sys_prompt = st.text_area(
         "System Prompt",
